@@ -29,8 +29,10 @@ namespace MusicPlayer
             if (songList.Count <= 0)
             {
                 MessageBox.Show("Please add at least one song!");
+                button1.Enabled = false;
                 return;
             }
+            
 
             if (songCounter >= songList.Count) return;
 
